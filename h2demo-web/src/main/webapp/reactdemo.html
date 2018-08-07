@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>reactdemo演示</title>
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- 可选的Bootstrap主题文件（一般不使用） -->
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"></script>
+
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="https://cdn.bootcss.com/react/16.4.0/umd/react.development.js"></script>
+    <script src="https://cdn.bootcss.com/react-dom/16.4.0/umd/react-dom.development.js"></script>
+    <!--生产环境中不建议使用-->
+    <script src="https://cdn.bootcss.com/babel-standalone/6.26.0/babel.min.js"></script>
+</head>
+<body>
+    <div class="container" id="example">
+    </div>
+    <div class="container" id="example2">
+    </div>
+    <div class="container" id="example3">
+    </div>
+    <div class="container" id="example4">
+    </div>
+</body>
+<script src="reactdemo.js" type="text/babel"></script>
+<script type="text/babel">
+    // 注释
+    // var i = 1;
+    // var style = {
+    //     fontSize: 100,
+    //     color: '#ff0000'
+    // };
+    // ReactDOM.render(
+    //     <div>
+    //         {/*注释*/}
+    //         <h1 style={style}>
+    //             {i === 1? "true": "false"}
+    //         </h1>
+    //     </div>,
+    //     document.getElementById("example2")
+    // )
+
+    var arr = [
+        <h1 className="text-success">菜鸟教程</h1>,
+        <h2>学的不仅是技术, 更是梦想</h2>
+    ];
+    // 数据渲染
+    ReactDOM.render(
+        <div>{arr}</div>,
+        document.getElementById("example3")
+    );
+
+    // 复合组件
+    class Name extends React.Component {
+        render() {
+            return (
+                <h1>网站名称：{this.props.name}</h1>
+            )
+        }
+    }
+    class Url extends React.Component {
+        render() {
+            return (
+                <h1>网站地址：{this.props.url}</h1>
+            )
+        }
+    }
+    class NickName extends React.Component {
+        render() {
+            return (
+                <h1>网站别称：{this.props.nickName}</h1>
+            )
+        }
+    }
+    function App() {
+        return (
+            <div>
+                <Name name = "菜鸟教程"/>
+                <Url url = "https://baidu.com"/>
+                <NickName nickName = "bilibili"/>
+            </div>
+        )
+    }
+    ReactDOM.render(
+        <App/>,
+        document.getElementById("example4")
+    )
+
+</script>
+</html>

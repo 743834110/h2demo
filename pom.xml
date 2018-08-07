@@ -6,11 +6,24 @@
 
   <groupId>com.lingnan</groupId>
   <artifactId>h2demo</artifactId>
-  <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>h2demo-web</module>
+    </modules>
 
-  <name>h2demo</name>
+    <name>h2demo</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
+
+
+  <repositories>
+    <repository>
+      <id>jxTech</id>
+      <url>http://nexusx.10byun.com/repository/</url>
+    </repository>
+  </repositories>
+
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -26,6 +39,11 @@
       <scope>test</scope>
     </dependency>
 
+    <dependency>
+      <groupId>judp</groupId>
+      <artifactId>judp-platform</artifactId>
+      <version>3.0.2</version>
+    </dependency>
 
     <!--h2数据库-->
     <dependency>

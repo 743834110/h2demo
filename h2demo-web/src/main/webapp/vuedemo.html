@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-bind="http://www.w3.org/1999/xhtml" xmlns:v-on="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/vue/2.4.2/vue.min.js"></script>
+    <style>
+        .color{
+            background: #aaaaaa;
+        }
+        .color1{
+            background: red;
+        }
+        .color2{
+            background: green;
+        }
+    </style>
+</head>
+<body>
+    <div id="vue_det">
+        <input type="checkbox" v-model="color2" id="r1">
+        <h1 v-bind:class="{'color': color2}" v-html = "url"></h1>
+        <h1 v-html = "details().split('').reverse().join('')"></h1>
+        <h1>{{5 + 5}}</h1>
+        <h1>{{ok? "yes": "no"}}</h1>
+        <h1 v-bind:class = "'color1'">fff</h1>
+        <h1 v-if = "seen">now you can see me</h1>
+        <a v-bind:href = "href">{{href}}</a>
+        <p v-html = "message"></p>
+        <input type="text" v-model = "message">
+        <a v-on:click= "aOnClick">点击事件</a>
+    </div>
+</body>
+<script>
+   $(function () {
+       var vue = new Vue({
+           el: "#vue_det",
+           data: {
+               message: "fdfd",
+               href: "www.baidu.com",
+               seen: false,
+               id: 2,
+               ok: true,
+               color2: true,
+               site: "菜鸟教程",
+               url: "http://www.b555aidu.com",
+           },
+           methods: {
+               details: function () {
+                   var string = this.site + "有梦想谁也了不起";
+                   return string.split('').reverse().join('');
+               },
+               aOnClick: function () {
+                   // 将某标签的可见性变为true
+                   vue.$data.seen = !vue.$data.seen;
+               }
+           }
+       })
+   })
+</script>
+</html>

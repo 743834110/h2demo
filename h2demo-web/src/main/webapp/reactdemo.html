@@ -17,6 +17,7 @@
 
     <script src="https://cdn.bootcss.com/react/16.4.0/umd/react.development.js"></script>
     <script src="https://cdn.bootcss.com/react-dom/16.4.0/umd/react-dom.development.js"></script>
+    <script src="https://cdn.bootcss.com/prop-types/15.6.1/prop-types.js"></script>
     <!--生产环境中不建议使用-->
     <script src="https://cdn.bootcss.com/babel-standalone/6.26.0/babel.min.js"></script>
 </head>
@@ -29,70 +30,65 @@
     </div>
     <div class="container" id="example4">
     </div>
+    <div class="container" id="example5">
+    </div>
+    <div class="container"  id="example6">
+    </div>
+    <div id="example7" class="container">
+    </div>
+    <div id="example8" class="container">
+    </div>
+    <div id="example9" class="container">
+    </div>
 </body>
 <script src="reactdemo.js" type="text/babel"></script>
 <script type="text/babel">
-    // 注释
-    // var i = 1;
-    // var style = {
-    //     fontSize: 100,
-    //     color: '#ff0000'
-    // };
-    // ReactDOM.render(
-    //     <div>
-    //         {/*注释*/}
-    //         <h1 style={style}>
-    //             {i === 1? "true": "false"}
-    //         </h1>
-    //     </div>,
-    //     document.getElementById("example2")
-    // )
+    // 事件绑定
+    function ActionLink() {
 
-    var arr = [
-        <h1 className="text-success">菜鸟教程</h1>,
-        <h2>学的不仅是技术, 更是梦想</h2>
-    ];
-    // 数据渲染
-    ReactDOM.render(
-        <div>{arr}</div>,
-        document.getElementById("example3")
-    );
+        function handleClick(e) {
+            e.preventDefault()
+            console.log("链接被点击")
+        }
 
-    // 复合组件
-    class Name extends React.Component {
-        render() {
-            return (
-                <h1>网站名称：{this.props.name}</h1>
-            )
-        }
-    }
-    class Url extends React.Component {
-        render() {
-            return (
-                <h1>网站地址：{this.props.url}</h1>
-            )
-        }
-    }
-    class NickName extends React.Component {
-        render() {
-            return (
-                <h1>网站别称：{this.props.nickName}</h1>
-            )
-        }
-    }
-    function App() {
         return (
-            <div>
-                <Name name = "菜鸟教程"/>
-                <Url url = "https://baidu.com"/>
-                <NickName nickName = "bilibili"/>
-            </div>
+            <a href="javascript:void(0)" onClick={handleClick}>
+                点我
+            </a>
         )
     }
-    ReactDOM.render(
-        <App/>,
-        document.getElementById("example4")
-    )
 
+    class Toggle extends React.Component {
+
+        constructor(props) {
+            super(props)
+
+            this.state = {
+                toggleOn: true
+            }
+
+            // 使得函数保有this对象
+            this.handleClick = this.handleClick.bind(this)
+        }
+
+        handleClick(e) {
+            this.setState(preState => ({
+                toggleOn: !preState.toggleOn
+            }))
+        }
+
+        render() {
+            return (
+                <button onClick={this.handleClick}>
+                    {this.state.toggleOn? "ON": "OFF"}
+                </button>
+            )
+        }
+    }
+
+    ReactDOM.render(
+        <Toggle/>,
+        document.getElementById("example9")
+    )
 </script>
 </html>

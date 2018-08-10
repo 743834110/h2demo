@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="JavaScriptLibraryMappings">
-    <file url="file://$PROJECT_DIR$/h2demo-web" libraries="{babel, bootstrap, jquery, react-dom.development, react.development, vue}" />
+    <file url="file://$PROJECT_DIR$/h2demo-web" libraries="{babel, bootstrap, jquery, prop-types, react-dom.development, react.development, vue}" />
   </component>
 </project>

@@ -261,3 +261,75 @@ ReactDOM.render(
     <Title title= {title}/>,
     document.getElementById("example8")
 )
+
+// 事件绑定
+function ActionLink() {
+
+    function handleClick(e) {
+        e.preventDefault()
+        console.log("链接被点击")
+    }
+
+    return (
+        <a href="javascript:void(0)" onClick={handleClick}>
+            点我
+        </a>
+    )
+}
+
+class Toggle extends React.Component {
+
+    /**
+     * 属性初始化器语法
+     * @type {number}
+     */
+    i = 5;
+    j = 8;
+
+    constructor(props) {
+        super(props)
+
+        this.state = {
+            toggleOn: true
+        };
+
+        // 使得函数保有this对象
+        this.handleClick = this.handleClick.bind(this)
+    }
+
+
+    handleClick3 = (self, id) => {
+        console.log(id)
+    };
+
+    handleClick4 = function(id, self) {
+        console.log(self.preventDefault())
+    };
+
+    handleClick2 = () => {
+        console.log(this + ":" + (this.i + this.j))
+    };
+
+    handleClick(e) {
+        console.log(e)
+        this.handleClick2();
+        this.setState(preState => ({
+            toggleOn: !preState.toggleOn
+        }))
+    }
+
+    render() {
+        return (
+            <button onClick={this.handleClick}>
+                {this.state.toggleOn? "ON": "OFF"}
+            </button>
+        )
+    }
+}
+
+
+
+ReactDOM.render(
+    <Toggle/>,
+    document.getElementById("example9")
+)

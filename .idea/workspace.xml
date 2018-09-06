@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="02f7b521-780b-4a2f-80a5-822bed627e97" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/h2demo-web/src/main/webapp/babel.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h2demo-web/src/main/webapp/importRequire.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/h2demo-web/src/main/webapp/flexdemo.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/h2demo-web/src/main/webapp/reactdemo.html" beforeDir="false" afterPath="$PROJECT_DIR$/h2demo-web/src/main/webapp/reactdemo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/h2demo-web/src/main/webapp/reactdemo.js" beforeDir="false" afterPath="$PROJECT_DIR$/h2demo-web/src/main/webapp/reactdemo.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -33,21 +30,30 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="vuedemo.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/h2demo-web/src/main/webapp/vuedemo.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-51">
+            <state relative-caret-position="437">
               <caret line="23" column="19" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="reactdemo.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="reactdemo.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/h2demo-web/src/main/webapp/reactdemo.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="549">
-              <caret line="66" column="18" selection-start-line="66" selection-start-column="18" selection-end-line="66" selection-end-column="18" />
+            <state relative-caret-position="265">
+              <caret line="39" column="10" lean-forward="true" selection-start-line="39" selection-start-column="10" selection-end-line="39" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="flexdemo.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/h2demo-web/src/main/webapp/flexdemo.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="139">
+              <caret line="24" column="31" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -67,8 +73,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -98,6 +104,7 @@
         <option value="$PROJECT_DIR$/h2demo-web/src/main/webapp/importRequire.js" />
         <option value="$PROJECT_DIR$/h2demo-web/src/main/webapp/demo.js" />
         <option value="$PROJECT_DIR$/h2demo-web/src/main/webapp/reactdemo.html" />
+        <option value="$PROJECT_DIR$/h2demo-web/src/main/webapp/flexdemo.html" />
       </list>
     </option>
   </component>
@@ -112,6 +119,12 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
   </component>
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
@@ -338,6 +351,9 @@
       <workItem from="1535935045392" duration="20718000" />
       <workItem from="1535961610620" duration="829000" />
       <workItem from="1535963900092" duration="1223000" />
+      <workItem from="1535969473252" duration="105000" />
+      <workItem from="1536021234097" duration="214000" />
+      <workItem from="1536206304590" duration="4217000" />
     </task>
     <servers />
   </component>
@@ -365,7 +381,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95718000" />
+    <option name="totallyTimeSpent" value="100254000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -377,13 +393,13 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
+    <frame x="640" y="0" width="640" height="984" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info id="Azure Explorer" order="2" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="right" id="Maven Projects" order="3" />
+      <window_info anchor="right" id="Maven Projects" order="3" weight="0.3298791" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Azure Activity Log" order="7" weight="0.32949308" />
       <window_info id="Capture Tool" order="2" />
@@ -403,7 +419,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3298122" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3295583" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.1889401" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15384616" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1865285" />
       <window_info id="Web" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Remote Spark Job in Cluster" order="7" />
       <window_info anchor="right" id="SciView" order="4" />
@@ -427,13 +443,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lingnan/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/lingnan/ConnectionTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
@@ -747,18 +756,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/h2demo-web/src/main/webapp/vuedemo.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-51">
+        <state relative-caret-position="437">
           <caret line="23" column="19" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/h2demo-web/src/main/webapp/demo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/h2demo-web/src/main/webapp/demo.js" />
     <entry file="file://$PROJECT_DIR$/h2demo-web/src/main/webapp/reactdemo.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
@@ -775,8 +778,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/h2demo-web/src/main/webapp/reactdemo.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="549">
-          <caret line="66" column="18" selection-start-line="66" selection-start-column="18" selection-end-line="66" selection-end-column="18" />
+        <state relative-caret-position="265">
+          <caret line="39" column="10" lean-forward="true" selection-start-line="39" selection-start-column="10" selection-end-line="39" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/h2demo-web/src/main/webapp/flexdemo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="24" column="31" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
         </state>
       </provider>
     </entry>

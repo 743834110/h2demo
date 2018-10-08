@@ -31,9 +31,15 @@
         <input type="text" v-model = "message">
         <a v-on:click= "aOnClick">点击事件</a>
     </div>
+    <form id="textForm" action="babel.min.js" method="post">
+        <input type="text" v-model = 'A' name="A"/>
+        <input type="text" v-model = 'B' name="B"/>
+        <input type="text" v-model = 'C' name="C"/>
+    </form>
 </body>
 <script>
    $(function () {
+
        var vue = new Vue({
            el: "#vue_det",
            data: {
@@ -57,6 +63,14 @@
                }
            }
        })
+
+       // textForm
+       var inputs = $("*[v-model != '']", "#textForm")
+       $.each(inputs, (k, v) => {
+           console.log(vue.$data)
+       })
+
+
    })
 </script>
 </html>

@@ -58,18 +58,27 @@
     </div>
     <div class="container" id="example18">
     </div>
+    <div class="container" id="example19">
+
+    </div>
 </body>
 <script src="reactdemo.js" type="text/babel">
 </script>
-<script>
-    $(function () {
-        var test = require("importRequire");
-        alert(test);
-    })
-</script>
 
 <script type="text/babel">
-
+    $(function () {
+        function Test(value) {
+            return (
+                <h1>
+                    {value}
+                </h1>
+            )
+        }
+        ReactDOM.render(
+            <Test value={'青青子衿，悠悠我心'}/>,
+            document.getElementById("example16")
+        )
+    })
 </script>
 
 </html>
